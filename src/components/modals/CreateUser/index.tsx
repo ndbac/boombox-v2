@@ -20,7 +20,7 @@ export default function CreateUserModal() {
   }
 
   return <Modal
-    title={'Join Boombox'}
+    title={'Join Lovetube'}
     open={!profile}
     footer={null}
   >

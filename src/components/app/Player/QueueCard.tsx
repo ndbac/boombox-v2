@@ -28,16 +28,6 @@ export default function QueueCard() {
               src={item.picture}
               className={styles.queueItemPicture}
             />
-            <div className={styles.queueItemName}>
-              <div>
-                {item.title}
-              </div>
-              <Tag>
-                {moment.utc(item.duration * 1000).format(
-                  item.duration > 3600 ? 'HH:mm:ss' : 'mm:ss'
-                )}
-              </Tag>
-            </div>
             <div className={styles.controls}>
               <Button shape={'circle'} type={'text'} danger onClick={() => {
                 dispatch(removeTrack(item.id));
