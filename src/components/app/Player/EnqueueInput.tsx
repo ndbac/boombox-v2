@@ -27,7 +27,7 @@ export default function EnqueueInput() {
           source: profile?.username
         },
       })));
-      dispatch(enqueueTrack(track));
+      dispatch(enqueueTrack(track as any));
       setUrl('');
     } catch (e: any) {
       message.error(e.message || 'Failed to enqueue video');
